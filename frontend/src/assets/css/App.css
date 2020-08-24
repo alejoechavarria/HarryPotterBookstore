@@ -1,0 +1,340 @@
+body {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  /*Fuentes*/
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+#header {
+  height: 120px;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #ccc;
+  border-top: 3px solid #61dafb;
+}
+
+.center {
+  width: 75%;
+  margin: 0px auto;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+#logo {
+  width: 30%;
+  font-size: 30px;
+  float: left;
+  margin-top: 40px;
+}
+
+#logo img {
+  display: block;
+  float: left;
+  height: 40px;
+  margin-top: 2px;
+  margin-right: 25px;
+  animation: vibrate infinite 5s linear;
+}
+
+@keyframes vibrate {
+  0%  { -webkit-transform:rotateZ(-5deg) scale(1.7); }
+  50% { -webkit-transform:rotateZ( 0deg) scale(2.2); }
+  100%{ -webkit-transform:rotateZ( 5deg) scale(1.7); }
+}
+
+#brand {
+  display: block;
+  margin: 0px;
+  float: left;
+}
+
+#menu {
+  width: 70%;
+  font-size: 18px;
+  display: inline-block;
+}
+
+#menu ul {
+  line-height: 60px;
+  width: 50%;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 32px;
+}
+
+#menu ul li {
+  display: inline-block;
+  list-style: none;
+  height: 45px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: #444;
+  transition: 300ms;
+}
+
+#menu ul li a:hover {
+  color: #3cb2d3;
+}
+
+.active {
+  border-bottom: 2px solid #3cb2d3;
+}
+
+div.shopping-cart {
+  float: left;
+  width: 19%;
+}
+
+
+
+#cart {
+  border: 1px solid #444;
+  border-radius: 13px;
+  width: 43%;
+  height: 47px;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: -87px;
+  background: #d6dee0;
+}
+
+#cart:hover {
+  border-color: rgb(202, 200, 200);
+  border-radius: 13px;
+}
+
+#cart:focus {
+  border-color: rgb(202, 200, 200);
+  box-shadow: 0 0 1px 3px rgb(202, 200, 200);
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  outline: none;
+}
+
+#cart img {
+  width: 100%;
+}
+
+.btn-acces {
+  width: 15%;
+  font-size: 18px;
+  height: 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+  transition: 300ms;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, -apple-system, BlinkMacSystemFont;
+  background: #d6dee0;
+  color: #444;
+  border: 1px solid #444;
+}
+
+
+.btn-acces:hover {
+  border-color: rgb(202, 200, 200);
+  color: 3cb2d3;
+}
+
+.btn-acces:focus {
+  border-color: rgb(202, 200, 200);
+  box-shadow: 0 0 1px 3px rgb(202, 200, 200);
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: 3cb2d3; 
+  outline: none;
+}
+
+.btn-acces-login {
+  float: left;
+}
+
+input[type="text"],
+input[type="password"]
+{
+  width: 100%;
+  min-height: 30px;
+  border: 1px solid #ccc;
+  padding: 3px;
+  margin-bottom: 5px;
+  transition: 30ms all;
+}
+
+input[type="text"]:focus,
+input[type="password"]
+{
+  box-shadow: 0px 0px 5px #eee inset;
+}
+
+.subheader {
+  font-size: 38px;
+  border-bottom: 1px solid rgb(34, 32, 32);
+  padding-bottom: 10px;
+}
+
+
+.article-item {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: left;
+}
+
+.article-item .image-wrap {
+  width: 81px;
+  height: 130px;
+  overflow: hidden;
+  float: left;
+  margin-right: 15px;
+  border: 1px solid #ccc;
+}
+
+.article-item .image-wrap img {
+  height: 100%;
+  text-align: center;
+}
+
+.article-item h2 {
+  display: block;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 7px;
+}
+
+.article-detail .image-wrap {
+  float: none;
+  width: 100%;
+  height: 300px;
+}
+
+.article-detail .image-wrap img{
+  width: 100%;
+  height: auto;
+}
+
+.article-detail .subheader {
+  margin-bottom: 0px;
+  border: none;
+  margin-top: 10px;
+}
+
+.products-table {
+  width: 100%;
+  border-left: 1px solid black;
+  border-right: 1px solid white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid white;
+}
+
+.products-table td {
+  border-left: 1px solid white;
+  border-right: 1px solid black;
+  border-top: 1px solid white;
+  border-bottom: 1px solid black;
+}
+
+.mid-form {
+  width: 50%;
+  margin: 0px auto;
+}
+
+.mid-form label {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  min-height: 30px;
+  border: 1px solid #ccc;
+  padding: 3px;
+  margin-bottom: 5px;
+  transition: 30ms all;
+}
+
+input[type="text"]:focus,
+input[type="password"],
+textarea:focus {
+  box-shadow: 0px 0px 5px #eee inset;
+}
+
+textarea {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 300px;
+  min-height: 100px;
+}
+
+.btn {
+  display: block;
+  background: black;
+  color: black;
+  padding: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-decoration: none;
+  max-width: 118px;
+  transition: 300ms all;
+  border: none ;
+}
+
+.btn-success {
+  background:#3cb2d3;
+}
+
+.btn-success:hover {
+  background: black;
+  color: white;
+}
+
+.btn-logout {
+  width: 15%;
+  font-size: 15px;
+  height: 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+  transition: 300ms;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, -apple-system, BlinkMacSystemFont;
+  background: #d6dee0;
+  color: #444;
+  border: 1px solid #444;
+}
+
+
+.btn-logout:hover {
+  border-color: rgb(202, 200, 200);
+  color: 3cb2d3;
+}
+
+.btn-logout:focus {
+  border-color: rgb(202, 200, 200);
+  box-shadow: 0 0 1px 3px rgb(202, 200, 200);
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: 3cb2d3; 
+  outline: none;
+}
+
+.text-login {
+  margin-bottom: -20px;
+}
+
+
